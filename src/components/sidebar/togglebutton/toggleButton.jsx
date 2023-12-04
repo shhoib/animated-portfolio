@@ -1,7 +1,12 @@
 
 const ToggleButton = ({setOpen}) => {
+  const aa = ()=>{
+    console.log('changed');
+    setOpen((prev)=> !prev)
+  }
   return (
-    <button onClick={()=>setOpen((prev)=> !prev)}>ToggleButton</button>
+
+    <button onClick={aa}>ToggleButton</button>
   )
 }
 
